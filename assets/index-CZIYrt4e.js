@@ -48,17 +48,7 @@ ${v}`}class C extends Error{constructor({message:e,code:r,cause:s,name:n}){var i
         <p class="gate-note">Service role key 只能用于本地导入，不得以 <code>VITE_</code> 开头。</p>
       </section>
     </main>`}function mr(t=""){ve.innerHTML=`
-    <main class="gate-shell">
-      <section class="gate-copy">
-        <p class="gate-kicker">ZENSIA · PRIVATE REVIEW</p>
-        <h1>先独立判断，<br>再交换证据。</h1>
-        <p>这里不是共享聊天框。你们各自逐句批注；本章双方提交前，彼此意见保持封存。</p>
-        <dl class="gate-rules">
-          <div><dt>01</dt><dd>正文绑定冻结版本</dd></div>
-          <div><dt>02</dt><dd>批注先盲审后对照</dd></div>
-          <div><dt>03</dt><dd>提交后原意见冻结</dd></div>
-        </dl>
-      </section>
+    <main class="gate-shell gate-shell--login">
       <form id="login-form" class="gate-form">
         <p class="folio">仅限受邀审读者</p>
         <h2>用邮箱进入</h2>
