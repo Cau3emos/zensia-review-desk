@@ -51,6 +51,7 @@ Resources:`;for(let t of c){if(!t||typeof t!=`string`)throw Error(`@supabase/aut
         <p class="field-help">系统会发送一次性阅读链接。未列入邀请的邮箱看不到正文。</p>
         <p id="login-message" class="form-message" role="status">${Y(e)}</p>
         <button class="button button--accent" type="submit">发送登录链接</button>
+        <a class="text-button" href="./?mode=editor">我是主编</a>
       </form>
     </main>`,document.querySelector(`#login-form`).addEventListener(`submit`,wa)}async function xa(e){e.preventDefault();let t=e.currentTarget,n=t.querySelector(`button`),r=t.querySelector(`#login-message`),i=new FormData(t);n.disabled=!0,n.textContent=`正在登录…`;let{error:a}=await J.auth.signInWithPassword({email:i.get(`email`)?.toString().trim(),password:i.get(`password`)?.toString()});n.disabled=!1,n.textContent=`进入审校台`,a&&(r.textContent=a.message===`Invalid login credentials`?`邮箱或密码不正确。`:`登录失败：${a.message}`,r.dataset.kind=`error`)}function Sa(){X.innerHTML=`
     <main class="gate-shell gate-shell--login">
